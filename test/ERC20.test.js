@@ -4,7 +4,7 @@ async function deploy(name, ...params) {
 }
 
 describe("factories", function () {
-  for (const name of ["FactoryNaive", "FactoryProxy", "FactoryClone"]) {
+  for (const name of ["FactoryNaive", "FactoryERC1967Proxy", "FactoryClone"]) {
     describe(name, function () {
       before(async function () {
         this.accounts = await ethers.getSigners();
